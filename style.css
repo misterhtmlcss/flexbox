@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(darkblue,slateblue);
+    background: linear-gradient(#525252, #3d72b4);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -21,26 +21,22 @@ section {
 }
 
 .pagetitle {
-    border-bottom: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .pagetitle > .box {
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid white;
-}
-
-.pagetitle:hover {
-    flex-direction: row-reverse;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid white;
 }
 
 .cssprop {
+    display: inline-flex;
+    padding: 15px;
     color: gold;
     font-size: 1.2em;
-    margin-left: 10px;
 }
 
 .container {
@@ -61,13 +57,13 @@ section {
 
 .container2 {flex-direction: row;}
 
+.container2 .box {width: 16.66666%;}
+
 .container2:hover {flex-direction: row-reverse;}
 
 .container3 {flex-direction: column;}
 
 .container3:hover {flex-direction: column-reverse;}
-
-.container4 {height: 100%;}
 
 .container4 .box {width: 33.33333333333%;}
 
