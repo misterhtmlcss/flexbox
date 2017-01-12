@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(darkblue,slateblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, p, .box{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+p {font-size: 1em;}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.pagetitle {
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagetitle > .box {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.pagetitle:hover {
+    flex-direction: row-reverse;
+}
+
+.cssprop {
+    color: gold;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.container {
+    border: 2px solid white;
+    display: flex;
+}
+
+.container1 {
+    width: 28px;
+    transition: width 1s;
+    /*display: inline-flex; Instead of transition*/
+}
+
+.container1:hover {
+    width: 100%;
+    /*display: flex; Instead of transition*/
+}
+
+.container2 {flex-direction: row;}
+
+.container2:hover {flex-direction: row-reverse;}
+
+.container3 {flex-direction: column;}
+
+.container3:hover {flex-direction: column-reverse;}
+
+.container4 {height: 100%;}
+
+.container4 .box {width: 33.33333333333%;}
+
+.container4:hover {flex-wrap: wrap;}
+
+.box1 {background-color: gold;}
+.box2 {background-color: black;}
+.box3 {background-color: purple;}
+.box4 {background-color: darkred;}
+.box5 {background-color: hotpink;}
+.box6 {background-color: orangered;}

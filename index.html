@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="pagetitle">
+        <div class="box box4">F</div>
+        <div class="box box2">L</div>
+        <div class="box box3">E</div>
+        <div class="box box1">X</div>
+        <div class="box box5">B</div>
+        <div class="box box4">O</div>
+        <div class="box box6">X</div>
+    </div>
+    <section>
+        <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.</br>
+        <span class="cssprop">display: inline-flex;</span></p>
+        <div class="container container1">
+            <div class="box box1">1</div>
+        </div>
+        <p>On hover, it is a block flexbox container and takes up the width of the whole page.</br>
+        <span class="cssprop">display: flex;<span></p>
+    </section>
+    <section>
+        <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom</br>
+        <span class="cssprop">flex-direction: row;</span></p>
+        <div class="container container2">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+        <p>On hover, its direction is reversed, with main axis right to left and cross axis bottom to top</br>
+        <span class="cssprop">flex-direction: row-reverse;</span></p>
+    </section>
+    <section>
+        <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left</br>
+        <span class="cssprop">flex-direction: column;</span></p>
+        <div class="container container3">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+        <p>On hover, its direction is reversed, with main axis bottom to top left to right</br>
+        <span class="cssprop">flex-direction: column-reverse;</span></p>
+    </section>
+    <section>
+        <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row</br>
+        <span class="cssprop">flex-direction: nowrap;</span></p>
+        <div class="container container4">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+        </div>
+        <p>On hover, it is given wrap, with flex items wrapping to the next row and resizing height to fit the container</br>
+        <span class="cssprop">flex-wrap: wrap;</span></p>
+    </section>
+</body>
+</html>
