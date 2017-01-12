@@ -17,6 +17,9 @@ p {font-size: 1em;}
 section {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+section::after {
     border-bottom: 1px solid #ffffff;
 }
 
