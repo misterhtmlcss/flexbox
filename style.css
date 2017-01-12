@@ -5,10 +5,10 @@ body {
 }
 
 h1, p, .box{
-    color: white;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px #000000;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ p {font-size: 1em;}
 section {
     padding-top: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff;
 }
 
 .pagetitle {
@@ -29,18 +29,18 @@ section {
 .pagetitle > .box {
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
 }
 
 .cssprop {
     display: inline-flex;
     padding: 15px;
-    color: gold;
-    font-size: 1.2em;
+    color: #ffd700;
+    font-size: 1.4em;
 }
 
 .container {
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     display: flex;
 }
 
@@ -56,23 +56,35 @@ section {
 }
 
 .container2 {flex-direction: row;}
-
 .container2 .box {width: 16.66666%;}
-
 .container2:hover {flex-direction: row-reverse;}
 
 .container3 {flex-direction: column;}
-
 .container3:hover {flex-direction: column-reverse;}
 
 .container4 .box {width: 33.33333333333%;}
-
 .container4:hover {flex-wrap: wrap;}
 
-.box1 {background-color: gold;}
-.box2 {background-color: black;}
-.box3 {background-color: purple;}
-.box4 {background-color: darkred;}
-.box5 {background-color: hotpink;}
-.box6 {background-color: orangered;}
-.box7 {background-color: silver;}
+.container5 .box {flex: 0;}
+.container5 .box:hover {flex: 1;}
+
+.container6 {margin-bottom: 5px;}
+.container6 .box {flex: 1;}
+.container6 .box2 {flex: 2;}
+.container6 .box3 {flex: 3;}
+
+.container7 .box {flex: 1;}
+.container7 .box1 {order: 0;}
+.container7 .box2 {order: -3;}
+.container7 .box3 {order: 2;}
+.container7 .box4 {order: 1;}
+.container7 .box5 {order: -2;}
+.container7 .box6 {order: -1;}
+
+.box1 {background-color: #ffd700;}
+.box2 {background-color: #000000;}
+.box3 {background-color: #800080;}
+.box4 {background-color: #ff1800;}
+.box5 {background-color: #ff20d6;}
+.box6 {background-color: #ffa500;}
+.box7 {background-color: #4169e1;}
