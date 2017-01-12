@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(#525252, #3d72b4);
-    background-repeat: no-repeat;
+    background-repeat: cover;
     background-attachment: fixed;
 }
 
@@ -14,12 +14,10 @@ h1, p, .box{
 
 p {font-size: 1em;}
 
-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 section::after {
+    display: block;
+    content: '';
+    margin-top: 25px;
     border-bottom: 1px solid #ffffff;
 }
 
