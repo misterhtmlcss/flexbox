@@ -4,12 +4,22 @@ body {
     background-attachment: fixed;
 }
 
-h1, p, .box{
+h1, h2, h3, p, .box{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     text-shadow: 1px 1px #000000;
     text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
 }
 
 p {font-size: 1em;}
@@ -25,6 +35,9 @@ section::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .pagetitle > .box {
@@ -66,21 +79,18 @@ section::after {
 .container4 .box {width: 33.33333333333%;}
 .container4:hover {flex-wrap: wrap;}
 
-.container5 .box {flex: 0;}
-.container5 .box:hover {flex: 1;}
+.container5 {margin-bottom: 5px;}
+.container5 .box {flex: 1;}
+.container5 .box2 {flex: 2;}
+.container5 .box3 {flex: 3;}
 
-.container6 {margin-bottom: 5px;}
 .container6 .box {flex: 1;}
-.container6 .box2 {flex: 2;}
-.container6 .box3 {flex: 3;}
-
-.container7 .box {flex: 1;}
-.container7 .box1 {order: 0;}
-.container7 .box2 {order: -3;}
-.container7 .box3 {order: 2;}
-.container7 .box4 {order: 1;}
-.container7 .box5 {order: -2;}
-.container7 .box6 {order: -1;}
+.container6 .box1 {order: 0;}
+.container6 .box2 {order: -3;}
+.container6 .box3 {order: 2;}
+.container6 .box4 {order: 1;}
+.container6 .box5 {order: -2;}
+.container6 .box6 {order: -1;}
 
 .box1 {background-color: #ffd700;}
 .box2 {background-color: #000000;}
