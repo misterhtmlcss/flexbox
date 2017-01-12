@@ -1,6 +1,5 @@
 body {
     background: linear-gradient(#525252, #3d72b4);
-    background-repeat: cover;
     background-attachment: fixed;
 }
 
@@ -32,18 +31,13 @@ section::after {
 }
 
 .pagetitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff;
 }
 
-.pagetitle > .box {
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ffffff;
+.pagetitle span {
+    padding: 20px;
 }
 
 .cssprop {
