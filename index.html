@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Flexbox Cheat Sheet</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!--this isn't need anymore in html5 -> type="text/css"-->
 </head>
+
 <body>
-  <header class="pagetitle">
+    <header class="pagetitle">
         <h1>
-            <span class="box1">F</span><span class="box6">L</span><span class="box4">E</span><span class="box7">X</span><!--
-            --><span class="box5">B</span><span class="box3">O</span><span class="box8">X</span>
+            <span class="box1">F</span><span class="box6">L</span><span class="box4">E</span><span class="box7">X</span><span class="box5">B</span><span class="box3">O</span><span class="box2">X</span>
         </h1>
     </header>
     <main>
         <section>
             <h2>Display</h2>
-            <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.<br/>
-            On hover, its a block flexbox container and takes up the width of the whole page.<br/>
-            <span class="cssprop">display: inline-flex</span>
-            <span class="cssprop">display: flex</span></p>
+            <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.<br>
+                On hover, its a block flexbox container and takes up the width of the whole page.</p>
+                <p><span class="cssprop">display: inline-flex;</span><span class="cssprop">display: flex;</span></p>
             <div class="container container1">
                 <div class="box box1">1</div>
             </div>
         </section>
         <section>
             <h2>Flex-Direction</h2>
-            <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom.<br/>
-            On hover, its direction is reversed, with main axis right to left and cross axis bottom to top.<br/>
-            <span class="cssprop">flex-direction: row</span>
-            <span class="cssprop">flex-direction: row-reverse</span></p>
+            <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom.<br>
+                On hover, its direction is reversed, with main axis right to left and cross axis bottom to top.
+            </p>
+            <p>
+                <span class="cssprop">flex-direction: row;</span>
+                <span class="cssprop">flex-direction: row-reverse;</span>
+            </p>
             <div class="container container2">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
                 <div class="box box3">3</div>
             </div>
-            <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left.<br/>
-            On hover, its direction is reversed, with main axis bottom to top and cross axis left to right.<br/>
-            <span class="cssprop">flex-direction: column</span>
-            <span class="cssprop">flex-direction: column-reverse</span></p>
+            <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left.<br>
+                On hover, its direction is reversed, with main axis bottom to top and cross axis left to right.
+            </p>
+            <p>
+                <span class="cssprop">flex-direction: column;</span>
+                <span class="cssprop">flex-direction: column-reverse;</span>
+            </p>
             <div class="container container3">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -48,10 +56,13 @@
         </section>
         <section>
             <h2>Flex-Wrap</h2>
-            <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row.<br/>
-            On hover, it is given wrap, with flex items wrapping to the next row.<br/>
-            <span class="cssprop">flex-wrap: nowrap</span>
-            <span class="cssprop">flex-wrap: wrap</span></p>
+            <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row.<br>
+                On hover, it is given wrap, with flex items wrapping to the next row.
+            </p>
+            <p>
+                <span class="cssprop">flex-wrap: nowrap;</span>
+                <span class="cssprop">flex-wrap: wrap;</span>
+            </p>
             <div class="container container4">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -63,10 +74,13 @@
         </section>
         <section>
             <h2>Flex & Order</h2>
-            <p>The flex property specifies the length of the flex item relative to the other flex items in the same container.<br/>
-            The order property specifies the order of the flex item relative to the other flex items in the same container.<br/>
-            <span class="cssprop">flex: <#></span>
-            <span class="cssprop">order: <#></span></p>
+            <p>The flex property specifies the length of the flex item relative to the other flex items in the same container.<br>
+                The order property specifies the order of the flex item relative to the other flex items in the same container.
+            </p>
+            <p>
+                <span class="cssprop">flex: <#>;</span>
+                <span class="cssprop">order: <#>;</span>
+            </p>
             <h3>Flex Value</h3>
             <div class="container container5">
                 <div class="box box1">1</div>
@@ -86,34 +100,7 @@
                 <div class="box box6">-1</div>
             </div>
         </section>
-        <section>
-            <h2>Justify-Content</h2>
-            <p>The justify-content property aligns the flex items on the main axis, aligned by default to the left.<br/>
-            On hover, the flex items are aligned to the right.<br/>
-            <span class="cssprop">justify-content: flex-start</span>
-            <span class="cssprop">justify-content: center</span>
-            <span class="cssprop">justify-content: flex-end</span></p>
-            <div class="container container7">
-                <div class="box box1">1</div>
-                <div class="box box2">2</div>
-                <div class="box box3">3</div>
-                <div class="box box4">4</div>
-                <div class="box box5">5</div>
-                <div class="box box6">6</div>
-            </div>
-            <p>The space-between value inserts spaces between the flex items.<br/>
-            The space-around value inserts spaces before, between, and after the flex items.<br/>
-            On hover, spaces are added before and after the flex items, with the spaces between.<br/>
-            <span class="cssprop">justify-content: space-between</span>
-            <span class="cssprop">justify-content: space-around</span></p>
-            <div class="container container8">
-                <div class="box box1">1</div>
-                <div class="box box2">2</div>
-                <div class="box box3">3</div>
-                <div class="box box4">4</div>
-                <div class="box box5">5</div>
-                <div class="box box6">6</div>
-        </section>
     </main>
 </body>
+
 </html>
