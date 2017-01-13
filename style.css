@@ -33,7 +33,6 @@ section::after {
 .pagetitle {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -98,6 +97,29 @@ section::after {
 .container8 {justify-content: space-between;}
 .container8 .box {width: 8%;}
 .container8:hover {justify-content: space-around;}
+
+.container9 {
+    align-items: stretch;
+    height: 150px;
+}
+.container9 .box {flex: 1;}
+.container9:hover {align-items: center;}
+
+.container10 {
+    align-items: baseline;
+}
+.container10 .box {flex: 1;}
+.container10 .box1, .container10 .box6 {font-size: 100px;}
+.container10 .box2, .container10 .box5 {font-size: 80px;}
+.container10 .box3, .container10 .box4 {font-size: 60px;}
+
+.container11 {
+    flex-wrap: wrap;
+    height: 300px;
+    align-content: stretch;
+}
+.container11 .box {width: 33.33333%;}
+.container11:hover {align-content: center;}
 
 .box1 {background-color: #ffd700;}
 .box2 {background-color: #000000;}
