@@ -1,0 +1,23 @@
+To do list:
+
+Graphic Design
+Make FLEXBOX title look better
+Change color of background/boxes to be more cohesive?
+
+V2
+Add cross browser support to CSS (autoprefixer.github.io or gulp?)
+Make the site responsive (fix some text, fix FLEXBOX title H1 size)
+Add a navigation header
+Add highlights to code snippets on hover and add JS onclick events to add highlights and change the color of code snippets
+Change Display section code to display: inline-flex and replace CSS transition effect with JS
+Rewrite <p> code to explain each flex property better and include all property values as code snippets
+Add links to github, twitter, linkedin, and email in the footer
+Add a copyright symbol and rewrite the footer
+
+V3
+Add a flyout box or code box on the side showing how the code works for code snippets with the JS onclick event
+Allow the user to write in the code box to change values manually and see the result in the flex containers
+
+Maybe
+Add left/right arrows to each section to scroll left and right on mobile devices
+Add samples of projects using flexbox (navbars, photo sites, etc.)
