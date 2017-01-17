@@ -6,7 +6,7 @@ V2
 [X] Include all flex property values as yellow code snippets
 [X] Add highlights to yellow code snippets on hover
 [ ] Make the site responsive (fix some text, fix FLEXBOX title H1 size)
-[ ] Add JS onclick events to add highlights and change the color of code snippets
+[ ] Add JS onclick events to add click sounds, highlights and change the color of yellow code snippets
 [ ] Change Display section code to display: inline-flex and replace CSS transition effect with JS
 [ ] Rewrite <p> code to explain each flex property better
 [ ] Add a navigation bar
@@ -14,13 +14,13 @@ V2
 
 V3
 [ ] Simplify the CSS using SASS
-[ ] Add a flyout box or code box on the side showing how the code works for code snippets with the JS onclick event
-[ ] Allow the user to write in the code box to change values manually and see the result in the flex containers
+[ ] Add a flyout box or code box on the side showing how the code works for selected yellow code snippets with the JS onclick event
 
 Graphic Design
 [ ] Make FLEXBOX title look better
 [ ] Change color of background/boxes to be more cohesive?
 
-Maybe
-[ ]Add left/right arrows to each section to scroll left and right on mobile devices
+Wishlist
+[ ] Allow the user to write in the code box to change values manually and see the result in the flex containers
+[ ] Add left/right arrows to each section to scroll left and right on mobile devices
 [ ] Add samples of projects using flexbox (navbars, photo sites, etc.)
