@@ -17,6 +17,9 @@ h2 {
 
 p {font-size: 1em;}
 
+a {color: #ffffff;}
+a:hover {color: #000000}
+
 section::after {
     display: block;
     content: '';
@@ -46,6 +49,10 @@ section::after {
     padding: 15px;
     color: #ffd700;
     font-size: 1.4em;
+}
+
+.cssprop:hover {
+    text-shadow: 3px 3px #000000;
 }
 
 .container {
