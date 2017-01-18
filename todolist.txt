@@ -11,6 +11,8 @@ V2
 [ ] Rewrite <p> code to explain each flex property better
 [ ] Add a navigation bar
 [ ] Add cross browser support to CSS (autoprefixer.github.io or gulp?)
+[ ] Make a Medium post about the project
+[ ] Write a description about the project in the github readme
 
 V3
 [ ] Simplify the CSS using SASS
