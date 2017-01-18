@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
 }
 
-h1, h2, h3, p, .box{
+h1, h2, p, .box{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -15,13 +15,10 @@ h2 {
     font-size: 30px;
 }
 
-h3 {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 0px;
-}
-
 p {font-size: 1em;}
+
+a {color: #ffffff;}
+a:hover {color: #000000}
 
 section::after {
     display: block;
@@ -31,13 +28,20 @@ section::after {
 }
 
 .pagetitle {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.pagetitle h1 {
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
 }
 
 .pagetitle span {
-    padding: 20px;
+    height: 100px;
+    width: 10%;
 }
 
 .cssprop {
@@ -47,16 +51,22 @@ section::after {
     font-size: 1.4em;
 }
 
+.cssprop:hover {
+    text-shadow: 3px 3px #000000;
+}
+
 .container {
     border: 2px solid #ffffff;
     display: flex;
 }
 
 .container1 {
-    width: 28px;
+    width: 100px;
     transition: width 1s;
     /*display: inline-flex; Instead of transition*/
 }
+
+.container1 .box {width: 100px;}
 
 .container1:hover {
     width: 100%;
@@ -74,17 +84,69 @@ section::after {
 .container4:hover {flex-wrap: wrap;}
 
 .container5 {margin-bottom: 5px;}
-.container5 .box {flex: 1;}
-.container5 .box2 {flex: 2;}
-.container5 .box3 {flex: 3;}
+.container5 .box1 {flex-grow: 0;}
+.container5 .box3 {flex-grow: 1;}
+.container5 .box2 {flex-grow: 3;}
+.container5 .box4  {flex-grow: 2;}
 
-.container6 .box {flex: 1;}
-.container6 .box1 {order: 0;}
-.container6 .box2 {order: -3;}
-.container6 .box3 {order: 2;}
-.container6 .box4 {order: 1;}
-.container6 .box5 {order: -2;}
-.container6 .box6 {order: -1;}
+.container6 {margin-bottom: 5px;}
+.container6 .box {flex-basis: 400px;}
+.container6 .box1, .container6 .box3 {flex-shrink: 1;}
+.container6 .box2 {flex-shrink: 2;}
+.container6 .box4 {flex-shrink: 6;}
+
+.container7 {margin-bottom: 5px;}
+.container7 .box {flex: 1;}
+.container7 .box2 {flex-basis: 200px;}
+.container7 .box4 {flex-basis: 300px;}
+
+.container8 .box {flex: 1;}
+.container8 .box1 {order: 0;}
+.container8 .box2 {order: -3;}
+.container8 .box3 {order: 2;}
+.container8 .box4 {order: 1;}
+.container8 .box5 {order: -2;}
+.container8 .box6 {order: -1;}
+
+.container9 {justify-content: flex-start;}
+.container9 .box {width: 8%;}
+.container9:hover {justify-content: flex-end;}
+
+.container10 {justify-content: flex-start;}
+.container10 .box {width: 8%;}
+.container10:hover {justify-content: space-between;}
+
+.container11 {
+    align-items: stretch;
+    height: 150px;
+}
+.container11 .box {flex: 1;}
+.container11:hover {align-items: center;}
+
+.container12 {
+    align-items: baseline;
+}
+.container12 .box {flex: 1;}
+.container12 .box1, .container12 .box6 {font-size: 100px;}
+.container12 .box2, .container12 .box5 {font-size: 80px;}
+.container12 .box3 {font-size: 60px;}
+.container12 .box4 {font-size: 40px;}
+
+.container13 {
+    flex-wrap: wrap;
+    line-height: 100px;
+    height: 300px;
+    align-content: stretch;
+}
+.container13 .box {width: 33.33333%;}
+.container13:hover {align-content: center;}
+
+.container14 {
+    height: 200px;
+    align-items: flex-start;
+}
+.container14 .box {width: 33.33333%;}
+.container14 .box:hover {align-self: stretch;}
 
 .box1 {background-color: #ffd700;}
 .box2 {background-color: #000000;}
@@ -93,3 +155,4 @@ section::after {
 .box5 {background-color: #ff20d6;}
 .box6 {background-color: #ffa500;}
 .box7 {background-color: #4169e1;}
+.box8 {background-color: #666666;}
