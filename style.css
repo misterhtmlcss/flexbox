@@ -47,12 +47,13 @@ section::after {
 .cssprop {
     display: inline-flex;
     padding: 15px;
-    color: #ffd700;
+    color: #ffffff;
     font-size: 1.4em;
+    text-shadow: 2px 2px #000000;
 }
 
-.cssprop:hover {
-    text-shadow: 3px 3px #000000;
+.cssprop:first-child {
+    color: #ffd700;
 }
 
 .container {
@@ -68,20 +69,12 @@ section::after {
 
 .container1 .box {width: 100px;}
 
-.container1:hover {
-    width: 100%;
-    /*display: flex; Instead of transition*/
-}
-
 .container2 {flex-direction: row;}
 .container2 .box {width: 16.66666%;}
-.container2:hover {flex-direction: row-reverse;}
 
 .container3 {flex-direction: column;}
-.container3:hover {flex-direction: column-reverse;}
 
 .container4 .box {width: 33.33333333333%;}
-.container4:hover {flex-wrap: wrap;}
 
 .container5 {margin-bottom: 5px;}
 .container5 .box1 {flex-grow: 0;}
@@ -110,43 +103,26 @@ section::after {
 
 .container9 {justify-content: flex-start;}
 .container9 .box {width: 8%;}
-.container9:hover {justify-content: flex-end;}
 
-.container10 {justify-content: flex-start;}
-.container10 .box {width: 8%;}
-.container10:hover {justify-content: space-between;}
-
-.container11 {
+.container10 {
     align-items: stretch;
     height: 150px;
 }
-.container11 .box {flex: 1;}
-.container11:hover {align-items: center;}
+.container10 .box {flex: 1;}
 
-.container12 {
-    align-items: baseline;
-}
-.container12 .box {flex: 1;}
-.container12 .box1, .container12 .box6 {font-size: 100px;}
-.container12 .box2, .container12 .box5 {font-size: 80px;}
-.container12 .box3 {font-size: 60px;}
-.container12 .box4 {font-size: 40px;}
-
-.container13 {
+.container11 {
     flex-wrap: wrap;
     line-height: 100px;
     height: 300px;
-    align-content: stretch;
+    align-content: center;
 }
-.container13 .box {width: 33.33333%;}
-.container13:hover {align-content: center;}
+.container11 .box {width: 33.33333%;}
 
-.container14 {
+.container12 {
     height: 200px;
     align-items: flex-start;
 }
-.container14 .box {width: 33.33333%;}
-.container14 .box:hover {align-self: stretch;}
+.container12 .box {width: 33.33333%;}
 
 .box1 {background-color: #ffd700;}
 .box2 {background-color: #000000;}
