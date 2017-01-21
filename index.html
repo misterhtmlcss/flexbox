@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
     <title>Flexbox Cheat Sheet</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <!--this isn't need anymore in html5 -> type="text/css"-->
 </head>
 
 <body>
@@ -21,9 +20,8 @@
     <main>
         <section>
             <h2>Display</h2>
-            <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.<br>
-                On hover, its a block flexbox container and takes up the width of the whole page.</p>
-            <p><span class="cssprop">display: inline-flex</span><span class="cssprop">display: flex</span></p>
+            <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.</p>
+            <p><span class="cssprop" id="inlineflex">display: inline-flex</span><span class="cssprop" id="flex">display: flex</span></p>
             <div class="container container1">
                 <div class="box box1">1</div>
             </div>
@@ -31,18 +29,15 @@
 
         <section>
             <h2>Flex-Direction</h2>
-            <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom.<br>
-                On hover, its direction is reversed, with main axis right to left and cross axis bottom to top.
-            </p>
-            <p><span class="cssprop">flex-direction: row</span><span class="cssprop">flex-direction: row-reverse</span></p>
+            <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom.</p>
+            <p><span class="cssprop" id="flexdirrow">flex-direction: row</span><span class="cssprop" id="flexdirrowrev">flex-direction: row-reverse</span></p>
             <div class="container container2">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
                 <div class="box box3">3</div>
             </div>
-            <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left.<br>
-                On hover, its direction is reversed, with main axis bottom to top and cross axis left to right.</p>
-            <p><span class="cssprop">flex-direction: column</span><span class="cssprop">flex-direction: column-reverse</span></p>
+            <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left.</p>
+            <p><span class="cssprop" id="flexdircol">flex-direction: column</span><span class="cssprop" id="flexdircolrev">flex-direction: column-reverse</span></p>
             <div class="container container3">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -52,9 +47,8 @@
         
         <section>
             <h2>Flex-Wrap</h2>
-            <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row.<br>
-                On hover, it is given wrap, with flex items wrapping to the next row.</p>
-            <p><span class="cssprop">flex-wrap: nowrap</span><span class="cssprop">flex-wrap: wrap</span><span class="cssprop">flex-wrap: wrap-reverse</span></p>
+            <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row.</p>
+            <p><span class="cssprop" id="flexwrapno">flex-wrap: nowrap</span><span class="cssprop" id="flexwrap">flex-wrap: wrap</span><span class="cssprop" id="flexwraprev">flex-wrap: wrap-reverse</span></p>
             <div class="container container4">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -111,9 +105,9 @@
         
         <section>
             <h2>Justify-Content</h2>
-            <p>The justify-content property aligns the flex items on the main axis, aligned by default to the left.<br>
-                On hover, the flex items are aligned to the right.</p>
-            <p><span class="cssprop">justify-content: flex-start</span><span class="cssprop">justify-content: center</span><span class="cssprop">justify-content: flex-end</span></p>
+            <p>The justify-content property aligns the flex items on the main axis, aligned by default to the left.</p>
+            <p>The space-between value divides the empty space and inserts it between the flex items.</p>
+            <p><span class="cssprop" id="justifycontentstart">justify-content: flex-start</span><span class="cssprop" id="justifycontentcenter">justify-content: center</span><span class="cssprop" id="justifycontentend">justify-content: flex-end</span><span class="cssprop" id="justifycontentbetween">justify-content: space-between</span><span class="cssprop" id="justifycontentaround">justify-content: space-around</span></p>
             <div class="container container9">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -122,8 +116,13 @@
                 <div class="box box5">5</div>
                 <div class="box box6">6</div>
             </div>
-            <p>The space-between value divides the empty space and inserts it between the flex items.</p>
-            <p><span class="cssprop">justify-content: space-between</span><span class="cssprop">justify-content: space-around</span></p>
+        </section>
+        
+        <section>
+            <h2>Align-Items</h2>
+            <p>The align-items property specifies the alignment for flex items inside the container, by default stretched to fit.</p>
+            <p>The baseline value aligns all flex items along the bottom of the font.</p>
+            <p><span class="cssprop" id="alignitemsstretch">align-items: stretch</span><span class="cssprop" id="alignitemsstart">align-items: flex-start</span><span class="cssprop" id="alignitemscenter">align-items: center</span><span class="cssprop" id="alignitemsend">align-items: flex-end</span><span class="cssprop" id="alignitemsbase">align-items: baseline</span></p>
             <div class="container container10">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -131,38 +130,14 @@
                 <div class="box box4">4</div>
                 <div class="box box5">5</div>
                 <div class="box box6">6</div>
-        </section>
-        
-        <section>
-            <h2>Align-Items</h2>
-            <p>The align-items property specifies the alignment for flex items inside the container, by default stretched to fit.<br>
-                On hover, the flex items are aligned in the center.</p>
-            <p><span class="cssprop">align-items: stretch</span><span class="cssprop">align-items: center</span></p>
-            <div class="container container11">
-                <div class="box box1">1</div>
-                <div class="box box2">2</div>
-                <div class="box box3">3</div>
-                <div class="box box4">4</div>
-                <div class="box box5">5</div>
-                <div class="box box6">6</div>
             </div>
-            <p>The baseline value aligns all flex items along the bottom of the font.</p>
-            <p><span class="cssprop">align-items: baseline</span><span class="cssprop">align-items: flex-start</span><span class="cssprop">align-items: flex-end</span></p>
-            <div class="container container12">
-                <div class="box box1">1</div>
-                <div class="box box2">2</div>
-                <div class="box box3">3</div>
-                <div class="box box4">4</div>
-                <div class="box box5">5</div>
-                <div class="box box6">6</div>
         </section>
 
         <section>
             <h2>Align-Content</h2>
-            <p>The align-content property, working with flex-wrap, aligns lines of flex items, by default stretched.<br>
-                On hover, the content is aligned to the center.</p>
-            <p><span class="cssprop">align-content: stretch</span><span class="cssprop">align-content: flex-start</span><span class="cssprop">align-content: center</span><span class="cssprop">align-content: flex-end</span><span class="cssprop">align-content: space-between</span><span class="cssprop">align-content: space-around</span></p>
-            <div class="container container13">
+            <p>The align-content property, working with flex-wrap, aligns lines of flex items, by default stretched.</p>
+            <p><span class="cssprop" id="aligncontentstretch">align-content: stretch</span><span class="cssprop" id="aligncontentstart">align-content: flex-start</span><span class="cssprop" id="aligncontentcenter">align-content: center</span><span class="cssprop" id="aligncontentend">align-content: flex-end</span><span class="cssprop" id="aligncontentbetween">align-content: space-between</span><span class="cssprop" id="aligncontentaround">align-content: space-around</span></p>
+            <div class="container container11">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
                 <div class="box box3">3</div>
@@ -175,10 +150,9 @@
 
         <section>
             <h2>Align-Self</h2>
-            <p>The align-self property sets the alignment for a flex item inside the flex container.<br>
-                On hover, the box is given the stretch value.</p>
+            <p>The align-self property sets the alignment for a flex item inside the flex container.</p>
             <p><span class="cssprop">align-self: stretch</span></p>
-            <div class="container container14">
+            <div class="container container12">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
                 <div class="box box3">3</div>
@@ -190,13 +164,19 @@
     </main>
     <footer>
         <p>Created by Michael Suchorolski with help from Roger Kondrat</p>
+<<<<<<< HEAD
+        <p>Inspired by Wes Bos' "What The Flexbox?!" <a href="https://flexbox.io/">https://flexbox.io/</a></p>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
+=======
         <p><a href="mailto:mikesuchor@gmail.com">mikesuchor@gmail.com</a></p>
         <p><i class="fa fa-copyright" aria-hidden="true"> 2017</i></p>
+>>>>>>> e0621ff98293efcebc8346efb294b64a21f60081
         <p>
             <a href="https://github.com/mikesuchor"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
             <a href="http://twitter.com/mikesuchor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/michael-suchorolski-081982102"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         </p>
+        <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
